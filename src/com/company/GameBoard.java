@@ -550,4 +550,12 @@ public class GameBoard {
     public void setY(int y) {
         this.y = y;
     }
+
+    public boolean isHasStarted() {
+        return hasStarted;
+    }
+
+    public void setHasStarted(boolean hasStarted) {
+        this.hasStarted = hasStarted;
+    }
 }

@@ -13,14 +13,14 @@ public class GuiPanel {
     }
 
     public void update(){
-        for (GuiButton b : buttons){
-            b.update();
+        for (int i = 0; i < buttons.size(); i++) {
+            buttons.get(i).update();
         }
     }
 
     public void render(Graphics2D g){
-        for (GuiButton b : buttons){
-            b.render(g);
+        for (int i = 0; i < buttons.size(); i++) {
+            buttons.get(i).render(g);
         }
     }
 
@@ -33,29 +33,29 @@ public class GuiPanel {
     }
 
     public void mousePressed(MouseEvent e){
-        for (GuiButton b : buttons){
-            b.mousePressed(e);
+        for (int i = 0; i < buttons.size(); i++) {
+            buttons.get(i).mousePressed(e);
         }
 
     }
 
     public void mouseReleased(MouseEvent e){
-        for (GuiButton b : buttons){
-            b.mouseReleased(e);
+        for (int i = 0; i < buttons.size(); i++) {
+            buttons.get(i).mouseReleased(e);
         }
 
     }
 
     public void mouseDragged(MouseEvent e){
-        for (GuiButton b : buttons){
-            b.mouseDragged(e);
+        for (int i = 0; i < buttons.size(); i++) {
+            buttons.get(i).mouseDragged(e);
         }
 
     }
 
     public void mouseMoved(MouseEvent e){
-        for (GuiButton b : buttons){
-            b.mouseMoved(e);
+        for (int i = 0; i < buttons.size(); i++) {
+            buttons.get(i).mouseMoved(e);
         }
 
     }

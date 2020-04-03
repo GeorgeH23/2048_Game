@@ -2,12 +2,13 @@ package com.george.gui;
 
 import com.company.DrawUtils;
 import com.company.Game;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MainMenuPanel extends GuiPanel {
+
+    public static boolean wasPressed;
 
     private Font titleFont = Game.main.deriveFont(100f);
     private Font creatorFont = Game.main.deriveFont(15f);
@@ -32,7 +33,9 @@ public class MainMenuPanel extends GuiPanel {
         playButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 GuiScreen.getInstance().setCurrentPanel("Play");
+                wasPressed = false;
             }
         });
 

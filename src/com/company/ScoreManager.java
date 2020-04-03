@@ -73,7 +73,8 @@ public class ScoreManager {
         }
     }
 
-    public void saveGame(){
+    public void saveGame() {
+
         FileWriter output = null;
         if (newGame){
             newGame = false;
@@ -113,9 +114,10 @@ public class ScoreManager {
         } catch (Exception e){
             e.printStackTrace();
         }
+
     }
 
-    public void loadGame(){
+    public void loadGame() {
         try {
             File f = new File(filePath, temp);
 

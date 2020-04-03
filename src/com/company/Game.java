@@ -85,10 +85,10 @@ public class Game extends JPanel implements KeyListener, MouseListener, MouseMot
     private void volumeUpdate(){
         String name = "";
 
-        if (audio.isRunning("BG") || audio.getFrameposition("BG") != 0){
+        if (audio.isRunning("BG") || audio.getFramePosition("BG") != 0){
             name = "BG";
         }
-        if (audio.isRunning("SD") || audio.getFrameposition("SD") != 0){
+        if (audio.isRunning("SD") || audio.getFramePosition("SD") != 0){
             name = "SD";
         }
 
@@ -233,7 +233,7 @@ public class Game extends JPanel implements KeyListener, MouseListener, MouseMot
 
     @Override
     public void mouseReleased(MouseEvent e) {
-         screen.mouseReleased(e);
+        screen.mouseReleased(e);
     }
 
     @Override
